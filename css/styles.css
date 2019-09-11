@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap');
+
+
+/* TAG Selectors */
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+h1{
+    color:#fff;
+    font-family: 'Montserrat', sans-serif;
+    font-size:5rem;
+    font-weight: 800;
+}
+hr{
+    border:dotted #fff;;
+    border-width: 4px 0 0 0;
+    width:50%;
+ 
+}
+h2{
+    color:purple;
+    font-size:4rem;
+}
+
+footer{
+    text-align: center;
+}
+/****************** Class Selectors ****************/
+/* NAVBAR */
+
+.navbar-brand{
+    font-family:'Roboto';
+    font-weight: bold;
+
+}
+.bg-purple{
+    background-color:#b030b0;
+}
+.nav-item:hover{
+    transition: 0.5s;
+    transform:scale(1.2,1.3);
+}
+.navbar-brand-animation{
+    animation-name: brand;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+a.nav-link{
+    margin:0px 20px;
+}
+@keyframes brand{
+    0%{
+        transform: rotate(0deg);
+    }
+    50%{
+        transform: rotate(180deg);
+    }
+    100%{
+        transform: rotate(0deg);
+    }
+}
+.parallax-background{
+    background:  no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    /* compatibilate browsere*/
+    background-size: cover;
+    /* imagine de fundal parallax */
+  }
+  .layer-Transparenta {
+    background-image: linear-gradient(rgba(145, 86, 204, 0.4),
+        rgba(145, 86, 204, 0.4)),
+      url(https://c.wallhere.com/photos/58/c9/1920x1169_px_Fallout_Test_Patterns-825008.jpg!d);
+    background-size:cover;
+  }
+
+.container-fluid-top{
+    padding:20% 15%;
+}
+
+                    /* Titlu and parallax background */
+
+.title-paragraph{
+    color:#fff;
+    font-family: 'Montserrat';
+    font-size:3rem;
+    font-weight: 100
+}
+                        /* Content */
+                        /* Page bar */
+
+.page-bar{
+    padding:70px 0px 0px 0px;
+    background-color:#916e99;
+    z-index:2;
+    right:90%;
+    height:570px;
+    width:150px;
+    border-radius:10px;
+    border:1px solid rgb(223, 102, 223);
+    display:inline-block;
+}
+.page-bar ul{
+    text-align:center;
+    list-style-type:none;
+    padding-left:10px;
+
+}
+.page-bar li{
+    padding:10px 20px 10px 10px;
+    color:#fff;
+}
+.page-bar a{
+    text-decoration: none;
+    color:#fff;
+}
+.page-bar a:hover{
+    color:rgb(104, 19, 105);
+    transition: 0.5s;   
+}
+
+
+/*************************** ID Selectors ****************/
+#titlu{
+    text-align:center;
+}
+#despre-mine{
+    text-align:center;
+    display:inline-block;
+    width:80%;
+    position:relative;
+    top:100px;
+}
+#content{
+    position:relative;
+}
+#experienta{
+    padding-top:200px;
+    text-align:center;
+}
+#abilitati{
+    text-align:center;
+}
+
+#proiecte{
+    text-align:center;
+}
+#hobby-uri{
+    text-align:center;
+}
+
+/* Media Breakpoints - Mobile responsive */
+@media (max-width:468px ){
+
+    .container-fluid-top{
+        padding:30% 15%;
+    }
+    
+}
+
+@media  (max-width:768px) {
+    h1{
+        font-size: 3rem;
+    }
+    .container-fluid-top{
+        padding:10% 7%;
+    }
+}
+@media  (max-width:992px) {
+    .container-fluid-top{
+        padding: 10% 15%;
+    }
+}
+@media  (max-width:1200px) {
+   
+}
