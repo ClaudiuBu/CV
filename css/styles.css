@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap');
-
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
 
 /* TAG Selectors */
 body{
@@ -9,8 +9,22 @@ body{
 h1{
     color:#fff;
     font-family: 'Dark-Montserrat', sans-serif;
-    font-size:3rem;
+    font-size:4rem;
     font-weight:bolder;
+}
+p{
+    font-family: 'Roboto';
+    font-size:0.9rem;
+}
+a{
+    color:#b19cd9;
+    font-family:'Roboto';
+}
+a:hover{
+
+    transition:0.5s;
+    color:purple;
+    text-decoration:none;
 }
 hr{
     border:solid #aaa;
@@ -22,6 +36,16 @@ hr{
 h2{
     color:purple;
     font-size:4rem;
+}
+h5{
+    font-family: 'Open Sans';
+    font-weight: bold;
+    font-size:1rem;
+}
+h6{
+    font-family: 'Open Sans';
+    font-weight: 700;
+    font-size:0.8rem;
 }
 
 footer{
@@ -78,7 +102,7 @@ a.nav-link{
   }
 
 .container-fluid-top{
-    padding:20% 15%;
+    padding:18% 15%;
     height:100vh;
 }
 
@@ -90,15 +114,33 @@ a.nav-link{
     font-size:3rem;
     font-weight: 100;
 }
+.title-h1{
+  width:500px;
+  margin-left:29%;
+}
                         /* Content */
                         /* Page bar */
 
-.container{
+.container-despre-mine{
+    padding:5%;
+    
+}
+
+
+.container-page{
     max-width:800px;
     text-align:center;
     display:inline-block;
-    position:relative;
-}                       
+    padding:5% 2%;
+} 
+.container-skill{
+    padding:8% 2%;
+    width:900px;
+} 
+.logo-gies{
+    width:50px;
+    height:50px;
+}                     
 .page-bar{
     margin-top:0px;
     padding:70px 0px 0px 0px;
@@ -133,25 +175,88 @@ a.nav-link{
     padding: 0 10%;
     
 }
+/* Content despre-mine */
+.container-fix{
+    padding:0% 5%;
+}
+.top{
+    margin-top:5%;
+}
+.title-image{
+    display: block;
+  width: auto;
+  height: auto;
+  border-radius:50px;
+  border: 5px solid #F3EFE0;
 
 
+}
+.content-one{
+    
+    text-align:left;
+}
+.content-one h3{
+    color:#b030b0;
+}
+.content-two{
+    text-align:left;
+}
+.content-two h3{
+    color:#b030b0;
+}
+.titlu-paragraf{
+    font-weight: bold;
+}
 
+/* Experienta content*/
+.experience{
+    text-align:left;
+    padding:3% 0%;
+}
+.experience-title{
+    padding:2% 0% 1% 0%;
+}
+.experience-sub-title{
+    color:purple;
+}
+.quote{
+    color:#aaa;
+}
 
+.one{
+    background:repeating-linear-gradient(45deg,red,orange);
+}
+.two{
+    background:repeating-linear-gradient(45deg,green,blue);
+}
+.three{
+    background:repeating-linear-gradient(45deg,green,yellow)
+}
+.card-body p{
+    color:#fff;
+}
+.round{
+border-bottom-left-radius: 50px;
+border-bottom-right-radius: 50px;
+}
 /*************************** ID Selectors ****************/
 #titlu{
     text-align:center;
+   
 }
 #despre-mine{
     text-align:center;
     margin-top:-500px;
+    height:100vh;
 
 }
 #content{
     position:relative;
 }
 #experienta{
-    padding-top:200px;
+    
     text-align:center;
+    background-color:#F3EFE0;
 }
 #abilitati{
     text-align:center;
@@ -163,6 +268,10 @@ a.nav-link{
 #hobby-uri{
     text-align:center;
 }
+#footer{
+    text-align:center;
+}
+
 
 /* Media Breakpoints - Mobile responsive */
 
@@ -174,6 +283,10 @@ a.nav-link{
     h1{
         font-size:2rem;
     }
+    .title-h1{
+        width:500px;
+       margin-left:0;
+      }
     .container-fluid-top{
         padding:45% 15%;
         height:100vh;
@@ -192,6 +305,10 @@ a.nav-link{
     .page-bar{
         display: none;
     }
+    .title-h1{
+        width:500px;
+       margin-left:0;
+      }
     .container-fluid-top{
         padding:50% 15%;
         height:100vh;
@@ -215,6 +332,10 @@ a.nav-link{
     .page-bar{
         display: none;
     }
+    .title-h1{
+        width:500px;
+       margin-left:0;
+      }
     #despre-mine{
         margin-top:0;
     }
@@ -233,6 +354,10 @@ a.nav-link{
     .page-bar{
         display:none;
     }
+    .title-h1{
+        width:500px;
+       margin-left:0;
+      }
 
         #despre-mine{
             margin-top:0;
@@ -246,6 +371,10 @@ a.nav-link{
         padding:20% 15%;
         height:100vh;
     }
+    .title-h1{
+        width:500px;
+       margin-left:0;
+      }
     #despre-mine{
         margin-top:0;
     }
