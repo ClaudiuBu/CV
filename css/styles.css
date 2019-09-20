@@ -134,7 +134,7 @@ a.nav-link{
     padding:5% 2%;
 } 
 .container-skill{
-    padding:8% 2%;
+    padding:5% 2% 0% 5%;
     width:900px;
 } 
 .logo-gies{
@@ -222,6 +222,9 @@ a.nav-link{
 .quote{
     color:#aaa;
 }
+.container-sub-title-abilitati{
+    padding-top:2%;
+}
 
 .one{
     background:repeating-linear-gradient(45deg,red,orange);
@@ -232,12 +235,44 @@ a.nav-link{
 .three{
     background:repeating-linear-gradient(45deg,green,yellow)
 }
+.four{
+    background:repeating-linear-gradient(45deg,#aaa,#339AF0);
+}
+.five{
+    background:repeating-linear-gradient(45deg,#ccc,#563D7C);
+}
+.six{
+    background:repeating-linear-gradient(45deg,yellow,#009ACD);
+}
 .card-body p{
     color:#fff;
 }
-.round{
-border-bottom-left-radius: 50px;
-border-bottom-right-radius: 50px;
+
+.sub-title{
+    text-align:center;
+    padding-bottom:2%;
+}
+.table{
+    padding-top:5%;
+}
+.table tr:hover{
+    background-color:#eee;
+    cursor:pointer;
+    
+}
+.star{
+    color:#b030b0;
+}
+.table tr:hover .star{
+    transition:0.5s;
+    transform:scale(1.1,1.2);
+    color:purple;
+
+}
+
+/* Proiecte - Galerie*/
+.container-fluid-image{
+    padding:5%;
 }
 /*************************** ID Selectors ****************/
 #titlu{
@@ -264,10 +299,9 @@ border-bottom-right-radius: 50px;
 
 #proiecte{
     text-align:center;
+    background-color:#F3EFE0;
 }
-#hobby-uri{
-    text-align:center;
-}
+
 #footer{
     text-align:center;
 }
