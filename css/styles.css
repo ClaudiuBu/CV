@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
 
-/* TAG Selectors */
+                        /* TAG Selectors */
 body{
     font-family: 'Montserrat', sans-serif;
 }
@@ -15,6 +15,7 @@ h1{
 p{
     font-family: 'Roboto';
     font-size:0.9rem;
+    color:black;
 }
 a{
     color:#b19cd9;
@@ -51,80 +52,195 @@ h6{
 footer{
     text-align: center;
 }
+
 /****************** Class Selectors ****************/
-/* NAVBAR */
 
-.navbar-brand{
-    font-family:'Roboto';
-    font-weight: bold;
+        /* Site sections */
+        /* Header */
+            /* Navigation */
+            .nav-item:hover{
+                transition: 0.5s;
+                transform:scale(1.2,1.3);
+            }
+            .navbar-brand{
+                font-family:'Roboto';
+                font-weight: bold;
+            
+            }
+            .navbar-brand-animation{
+                animation-name: brand;
+                animation-duration: 5s;
+                animation-iteration-count: infinite;
+            }
+            a.nav-link{
+                margin:0px 20px;
+            }
+            @keyframes brand{
+                0%{
+                    transform: rotate(0deg);
+                }
+                50%{
+                    transform: rotate(180deg);
+                }
+                100%{
+                    transform: rotate(0deg);
+                }
+            }
+            .bg-purple{
+                background-color:#b030b0;
+            }
+            /* Header container and elements */
+            .container-fluid-top{
+                padding:18% 15%;
+                height:100vh;
+            }    
 
-}
-.bg-purple{
-    background-color:#b030b0;
-}
-.nav-item:hover{
-    transition: 0.5s;
-    transform:scale(1.2,1.3);
-}
-.navbar-brand-animation{
-    animation-name: brand;
-    animation-duration: 5s;
-    animation-iteration-count: infinite;
-}
-a.nav-link{
-    margin:0px 20px;
-}
-@keyframes brand{
-    0%{
-        transform: rotate(0deg);
-    }
-    50%{
-        transform: rotate(180deg);
-    }
-    100%{
-        transform: rotate(0deg);
-    }
-}
-.parallax-background{
-    background:  no-repeat center center fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    /* compatibilate browsere*/
-    background-size: cover;
-    /* imagine de fundal parallax */
-  }
-  .layer-Transparenta {
-    background-image: linear-gradient(rgba(145, 86, 204, 0.4),
-        rgba(145, 86, 204, 0.4)),
-      url(https://c.wallhere.com/photos/58/c9/1920x1169_px_Fallout_Test_Patterns-825008.jpg!d);
-    background-size:cover;
-  }
+            .title-paragraph{
+                color:#fff;
+                font-family: 'Montserrat';
+                font-size:3rem;
+                font-weight: 100;
+            }
+            .title-h1{
+              width:500px;
+              margin-left:29%;
+            }
 
-.container-fluid-top{
-    padding:18% 15%;
-    height:100vh;
-}
+            /* Header background */
+
+            .parallax-background{
+                background:  no-repeat center center fixed;
+                -webkit-background-size: cover;
+                -moz-background-size: cover;
+                -o-background-size: cover;
+                /* compatibilate browsere*/
+                background-size: cover;
+                /* imagine de fundal parallax */
+              }
+              .layer-Transparenta {
+                background-image: linear-gradient(rgba(145, 86, 204, 0.4),
+                    rgba(145, 86, 204, 0.4)),
+                  url(https://c.wallhere.com/photos/58/c9/1920x1169_px_Fallout_Test_Patterns-825008.jpg!d);
+                background-size:cover;
+              }
+            /* Icon header */
+            .icon-header-container{
+                position:absolute;
+                bottom: 0px;
+                left:0px;
+                width:150px;
+                height:150px;
+                background-color:#916e99;
+                text-align:center;
+                border-top-left-radius: 10px;
+                border-top-right-radius:10px;
+            }
+            .icon-container-fix{
+                position:relative;
+                
+
+            }
+            a.fas.fa-arrow-down{
+                
+                animation: arrow-move 2.5s infinite;
+                color:#fff;
+                margin-top:40px;
+                height:60px;
+                
+                
+            }
+            @keyframes arrow-move{
+                0%{margin-top:40px}
+                50%{margin-top:60px;}
+                100%{margin-top:40px}
+                }
+        
+        /* Content*/
+
+        /* Side bar */
+        .page-bar{
+            margin-top:0px;
+            padding:20px 0px 0px 0px;
+            background-color:#916e99;
+            z-index:2;
+            right:90%;
+            height:560px;
+            width:150px;
+            border-bottom-left-radius: 10px;
+            border-bottom-right-radius:10px;
+            /* border:1px solid rgb(223, 102, 223); */
+            display:inline-block;
+        }
+        .page-bar ul{
+            text-align:center;
+            list-style-type:none;
+            padding-left:10px;
+        
+        }
+        .page-bar li{
+            padding:10px 20px 10px 10px;
+            color:#fff;
+        }
+        .page-bar a{
+            text-decoration: none;
+            color:#fff;
+        }
+        .page-bar a:hover{
+            color:rgb(104, 19, 105);
+            transition: 0.5s;   
+        } 
+        /*Despre mine */
+            /* Container */
+            .container-despre-mine{
+             padding:5%;
+            }
+        /* Experienta */
+
+            /*Experienta - Cards Bootstrap */
+
+
+            /*Experienta - Tabel Bootstrap */
+
+        /* Abilitati section */
+            /* Cards Bootstrap */
+
+            /* Gradients */
+            .one{
+                background:repeating-linear-gradient(45deg,red,orange);
+            }
+            .two{
+                background:repeating-linear-gradient(45deg,green,blue);
+            }
+            .three{
+                background:repeating-linear-gradient(45deg,green,yellow)
+            }
+            .four{
+                background:repeating-linear-gradient(45deg,#aaa,#339AF0);
+            }
+            .five{
+                background:repeating-linear-gradient(45deg,#ccc,#563D7C);
+            }
+            .six{
+                background:repeating-linear-gradient(45deg,yellow,#009ACD);
+            }
+            
+        /* Proiecte section */
+            /* Galerie */
+
+        /* Footer */
+
+
+
+
+
 
                     /* Titlu and parallax background */
 
-.title-paragraph{
-    color:#fff;
-    font-family: 'Montserrat';
-    font-size:3rem;
-    font-weight: 100;
-}
-.title-h1{
-  width:500px;
-  margin-left:29%;
-}
+
                         /* Content */
                         /* Page bar */
 
-.container-despre-mine{
-    padding:5%;
-    
-}
+
 
 
 .container-page{
@@ -141,36 +257,7 @@ a.nav-link{
     width:50px;
     height:50px;
 }                     
-.page-bar{
-    margin-top:0px;
-    padding:70px 0px 0px 0px;
-    background-color:#916e99;
-    z-index:2;
-    right:90%;
-    height:560px;
-    width:150px;
-    border-radius:10px;
-    border:1px solid rgb(223, 102, 223);
-    display:inline-block;
-}
-.page-bar ul{
-    text-align:center;
-    list-style-type:none;
-    padding-left:10px;
 
-}
-.page-bar li{
-    padding:10px 20px 10px 10px;
-    color:#fff;
-}
-.page-bar a{
-    text-decoration: none;
-    color:#fff;
-}
-.page-bar a:hover{
-    color:rgb(104, 19, 105);
-    transition: 0.5s;   
-}
 .container-fluid-content{
     padding: 0 10%;
     
@@ -220,30 +307,14 @@ a.nav-link{
     color:purple;
 }
 .quote{
+    text-align:center;
     color:#aaa;
 }
 .container-sub-title-abilitati{
     padding-top:2%;
 }
 
-.one{
-    background:repeating-linear-gradient(45deg,red,orange);
-}
-.two{
-    background:repeating-linear-gradient(45deg,green,blue);
-}
-.three{
-    background:repeating-linear-gradient(45deg,green,yellow)
-}
-.four{
-    background:repeating-linear-gradient(45deg,#aaa,#339AF0);
-}
-.five{
-    background:repeating-linear-gradient(45deg,#ccc,#563D7C);
-}
-.six{
-    background:repeating-linear-gradient(45deg,yellow,#009ACD);
-}
+
 .card-body p{
     color:#fff;
 }
@@ -272,8 +343,66 @@ a.nav-link{
 
 /* Proiecte - Galerie*/
 .container-fluid-image{
-    padding:5%;
+    position: relative;
+    overflow:hidden;
+    margin:10px;
 }
+figcaption{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(155, 24, 167, 0.644);
+    visibility: hidden;
+    opacity: 0;
+    
+    
+    
+}
+.container-fluid-image:hover figcaption{
+    transition:0.5s;
+    visibility: visible;
+    opacity: 1;
+    overflow:hidden;
+}
+.container-fluid-image:hover .icon{
+}
+
+.container-figure{
+    padding:8% 10%;
+    
+}
+.fig-title{
+    padding:5% 5% 0% 0;
+}
+.fig-body{
+    padding: 6% 5% 5% 0;
+}
+.fig-footer{
+    padding: 5% 5% 5% 0;
+}
+.container-figure hr{
+    border:2px solid whitesmoke;
+    width:100%;
+
+}
+.container-figure h3,.container-figure p {
+    font-family: 'Montserrat';
+    text-align:left;
+    color:#fff;
+}
+.icon-container{
+    position:absolute;
+    top:0;
+    right:0;
+    width:100px;
+    height:100px;
+}
+.icon{
+    margin-right:0;
+}
+
 /*************************** ID Selectors ****************/
 #titlu{
     text-align:center;
