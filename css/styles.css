@@ -53,6 +53,7 @@ footer{
     text-align: center;
 }
 
+
 /****************** Class Selectors ****************/
 
         /* Site sections */
@@ -103,7 +104,7 @@ footer{
             }
             .title-h1{
               width:500px;
-              margin-left:29%;
+              margin:0 auto;
             }
 
             /* Header background */
@@ -130,7 +131,7 @@ footer{
                 left:0px;
                 width:150px;
                 height:150px;
-                background-color:#916e99;
+                background-color:#000;
                 text-align:center;
                 border-top-left-radius: 10px;
                 border-top-right-radius:10px;
@@ -161,10 +162,8 @@ footer{
         .page-bar{
             margin-top:0px;
             padding:20px 0px 0px 0px;
-            background-color:#916e99;
-            z-index:2;
+            background-color:#000;
             right:90%;
-            height:560px;
             width:150px;
             border-bottom-left-radius: 10px;
             border-bottom-right-radius:10px;
@@ -175,6 +174,7 @@ footer{
             text-align:center;
             list-style-type:none;
             padding-left:10px;
+            margin-bottom:0px;
         
         }
         .page-bar li{
@@ -192,7 +192,13 @@ footer{
         /*Despre mine */
             /* Container */
             .container-despre-mine{
-             padding:5%;
+             padding:0% 5% 5% 15%;
+            }
+            .container-fluid hr{
+                width:90%;
+            }
+            .container-despre-mine-content{
+                padding: 1% 0% 5% 9%;
             }
         /* Experienta */
 
@@ -263,6 +269,9 @@ footer{
     
 }
 /* Content despre-mine */
+.despre-mine-title{
+    padding:8% 0% 1% 0%;
+}
 .container-fix{
     padding:0% 5%;
 }
@@ -274,7 +283,7 @@ footer{
   width: auto;
   height: auto;
   border-radius:50px;
-  border: 5px solid #F3EFE0;
+  border: 10px solid #F3EFE0;
 
 
 }
@@ -400,9 +409,34 @@ figcaption{
     height:100px;
 }
 .icon{
-    margin-right:0;
-}
 
+}
+.hyperlink-icon{    
+    color:#434242; 
+    background-color:silver; 
+    border-radius:7px;
+    margin-right:15px; 
+    padding:2%;
+    display:inline;}
+a.contact-hyperlink{
+    color:silver;
+}
+a.contact-hyperlink:hover {
+    color:#fff;
+}
+a.contact-hyperlink:hover .hyperlink-icon{
+    background-color:#fff;
+}
+.container-footer{
+    padding:5% 15%;
+}
+.fb-color{
+    background-color:#44619D;
+    border-color:#44619D;
+}
+.download-button{
+    margin:5% 2% 5% 0;
+  }
 /*************************** ID Selectors ****************/
 #titlu{
     text-align:center;
@@ -411,7 +445,6 @@ figcaption{
 #despre-mine{
     text-align:center;
     margin-top:-500px;
-    height:100vh;
 
 }
 #content{
@@ -433,6 +466,11 @@ figcaption{
 
 #footer{
     text-align:center;
+    background-color:#434242;
+}
+#footer h2{
+    letter-spacing: 1px;
+    color:#fff;
 }
 
 

@@ -83,7 +83,7 @@
         </div>
         <div class="icon-header-container">
             <div clas="icon-container-fix">
-                <a class="fas fa-arrow-down fa-4x"></a>
+                <a class="fas fa-arrow-down fa-4x" href="#side-bar"></a>
             </div>
         </div>
     </header>
@@ -95,7 +95,7 @@
 
 
 
-        <div class="page-bar sticky-top">
+        <div class="page-bar sticky-top" id="side-bar">
 
             <ul>
                 <li>
@@ -109,12 +109,12 @@
                     Experienta
                 </li>
                 <li>
-                    <a class="fas fa-tasks fa-3x" href="#"></a>
+                    <a class="fas fa-tasks fa-3x" href="#abilitati"></a>
                     Abilitati
 
                 </li>
                 <li>
-                    <a class="fas fa-file fa-3x" href="#hobby-uri"></a>
+                    <a class="fas fa-file fa-3x" href="#proiecte"></a>
                     Portofoliu
                 </li>
                 <li>
@@ -128,12 +128,15 @@
             <div class="container container-despre-mine">
 
                 <div class="container-fluid">
-                    <div class="experience-title">
+                    <div class="despre-mine-title">
                         <h2>Profil</h2>
                     </div>
+                    <div class="container-sub-title-abilitati">
                     <p>Sunt un programator web creativ</p>
-                    <div class="container">
-                        <hr>
+                </div>
+                <hr>
+                    <div class="container container-despre-mine-content">
+                        
                         <div class="row top">
                             <div class="col-md-4">
 
@@ -172,6 +175,7 @@
 
         <!-- 2. Experienta  -->
         <div id="experienta">
+            <div class="container-despre-mine">
             <div class="experience-title">
                 <h2>Experienta</h2>
             </div>
@@ -295,12 +299,14 @@
                 </div>
             </div>
         </div>
+    </div>
 
         <!-- 2.1Gradient cu ficare job experience(fontawesome logo stanga sus la card) -->
 
 
         <!-- 2.2Aptitudini si tehnologii invatate(font awesome la stele) -->
         <div id="abilitati">
+            <div class="container-despre-mine">
             <div class="experience-title">
                 <h2>Abilitati</h2>
             </div>
@@ -570,6 +576,7 @@
         </div>
 
         <div id="proiecte">
+            <div class="container-despre-mine">
             <div class="experience-title">
                 <h2>Proiecte</h2>
             </div>
@@ -686,13 +693,7 @@
             </div>
             <!-- 3. Proiecte -->
             <!-- Carosel cu proiecte facute  -->
-
-
-            <img src="" alt="">
-            <img src="" alt="">
-            <img src="" alt="">
-            <hr>
-
+        </div>
         </div>
 
         <!-- Sau poate pot sa fac videoclip si sa-l hostez pe yt -->
@@ -700,23 +701,63 @@
 
 
 
-
+    </div>
     </div>
     </div>
     <div id="footer">
+        <div class="experience-title">
+            <h2>Contact</h2>
+        </div>
+        <p class="quote"><em>"If you always do what you always did, you will always get what you always got." - Albert Einstein</em></p>
 
+        <hr>
         <!-- footer -->
         <!-- 5. Contact -->
 
         <!-- 5.1Date de contact cu send me an email -->
         <!-- 5.2Social bar icons -->
-        <div class="social-icons">
-            <a href="">Twitter</a>
-            <a href="">Facebook</a>
-            <a href="">WhatsApp</a>
-            <a href="">GMail</a>
-            <a href="">Instagram</a>
+        <div class="social-links" style="padding:1% 15%">
+            <div class="container container-footer">
+                <div class="row">
+                    <div class="col-xl-6 col-md-6 col-xs-12" style="
+                    text-align: left">
+                        <a class="contact-hyperlink" href="mailto:cristian.c.butnaru@gmail.com"><i class="fas fa-at fa-2x hyperlink-icon"></i>cristian.c.butnaru@gmail.com</a>
+                    </div>
+                    <div class="col-xl-6 col-md-6 col-xs-12"style="
+                    text-align: right;">
+                        <a class="contact-hyperlink" href="https://www.linkedin.com/in/cristian-claudiu-butnaru-74057811b/"><i class="fab fa-linkedin-in fa-2x hyperlink-icon"></i>https://www.linkedin.com/in/cristian-claudiu-butnaru-74057811b/</a>
+                    </div>
+                </div>
+                <div class="row">
+                        <div class="col-xl-7 col-md-6 col-xs-12" style="
+                        text-align: left">
+                        <a class="contact-hyperlink" href="https://www.facebook.com/butnaru.claudiucristian"><i class="fab fa-facebook-f fa-2x hyperlink-icon"></i>https://www.facebook.com/butnaru.claudiucristian</a>
+                    </div>
+                </div>
+
+            </div>
+
         </div>
+        <hr>
+        <div class="social-icons-container">
+            <div class="container-footer">
+                <div class="row">
+                    <div class="col-xl-2 col-md-2 col-xs-2 ml-auto">
+                        <button class="btn btn-primary download-button" style="padding:3px 6px">
+                                <a class="fab fa-twitter" style="display:inline; color:#fff"  href="https://twitter.com/intent/tweet?text=Cristian%20Claudiu%20Butnaru%20Web%20Developer%20CV%20-%20https://claudiubu.github.io/CV/" data-size="large">Tweet</a>
+                        </button>
+                    </div>
+                    <div class="col-xl-2 col-md-2 col-xs-2 mr-auto">
+                        <button class="btn btn-primary fb-color download-button" style="padding:3px 6px">
+                                <i class="far fa-thumbs-up" style="display:inline;"></i>Like
+                        </button>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+
 
     </div>
 
