@@ -6,6 +6,7 @@
 body{
     font-family: 'Montserrat', sans-serif;
 }
+
 h1{
     color:#fff;
     font-family: 'Dark-Montserrat', sans-serif;
@@ -59,9 +60,12 @@ footer{
         /* Site sections */
         /* Header */
             /* Navigation */
+            .navigation{
+               visibility: hidden;
+            }
             .nav-item:hover{
                 transition: 0.5s;
-                transform:scale(1.2,1.3);
+                transform:scale(1.1,1.2);
             }
             .navbar-brand{
                 font-family:'Roboto';
@@ -88,7 +92,7 @@ footer{
                 }
             }
             .bg-purple{
-                background-color:#b030b0;
+                background:repeating-linear-gradient(45deg,#b030b0,transparent)
             }
             /* Header container and elements */
             .container-fluid-top{
@@ -489,6 +493,9 @@ a.contact-hyperlink:hover .hyperlink-icon{
 
 /* Extra small devices - Portrait phones (<544px) */
 @media screen and (max-width:544px){
+    .navigation{
+        visibility: visible ;
+    }
     .icon-header-container{
         display: none;
     }
@@ -551,6 +558,9 @@ a.contact-hyperlink:hover .hyperlink-icon{
 
 /*Small devices - Landscape phones (≥544px - <768px)*/
 @media (min-width:544px) and (max-width:768px){
+    .navigation{
+        visibility: visible ;
+    }
 
     .icon-header-container{
         display: none;
@@ -599,7 +609,11 @@ a.contact-hyperlink:hover .hyperlink-icon{
 }
 /*Medium devices -Tablets (≥768px - <992px) */
 @media(min-width:768px) and (max-width:992px){
+    .navigation{
+        visibility: visible ;
+    }
     .icon-header-container{
+        
         display: none;
     }
     .page-bar{
@@ -625,6 +639,9 @@ a.contact-hyperlink:hover .hyperlink-icon{
 }
 /*Large devices - Desktops (≥992px - <1200px)*/
 @media(min-width:992px) and (max-width:1200px){
+    .navigation{
+        visibility: visible ;
+    }
     .page-bar{
         display:none;
     }
@@ -647,11 +664,17 @@ a.contact-hyperlink:hover .hyperlink-icon{
 /*Extra large devices - Desktops (≥1200px)*/
 @media(min-width:992px) and (max-width:1200ox){
 
+    .navigation{
+        visibility: visible ;
+    }
     .container-fluid-top{
         padding:20% 15%;
         height:100vh;
     }
     #despre-mine{
         margin-top:0;
+    }
+    nav{
+        display:none;
     }
 }
