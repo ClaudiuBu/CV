@@ -189,11 +189,6 @@ footer{
             color:rgb(104, 19, 105);
             transition: 0.5s;   
         } 
-        .active{
-            background-color:white;
-            color:black;
-            transition:0.5s;
-        }
         /*Despre mine */
             /* Container */
             .container-despre-mine{
@@ -238,14 +233,102 @@ footer{
         /* Proiecte section */
             /* Galerie */
 
+            /* Proiecte - Galerie*/
+.container-fluid-image{
+    position: relative;
+    overflow:hidden;
+    margin:10px;
+}
+figcaption{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(155, 24, 167, 0.644);
+    visibility: hidden;
+    opacity: 0;
+    
+    
+    
+}
+.container-fluid-image:hover figcaption{
+    transition:0.5s;
+    visibility: visible;
+    opacity: 1;
+    overflow:hidden;
+}
+.container-fluid-image:hover .icon{
+}
+
+.container-figure{
+    padding:8% 10%;
+    
+}
+.fig-title{
+    padding:5% 5% 0% 0;
+}
+.fig-body{
+    padding: 6% 5% 5% 0;
+}
+.fig-footer{
+    padding: 5% 5% 5% 0;
+}
+.container-figure hr{
+    border:2px solid whitesmoke;
+    width:100%;
+
+}
+.container-figure h3,.container-figure p {
+    font-family: 'Montserrat';
+    text-align:left;
+    color:#fff;
+}
+.icon-container{
+    position:absolute;
+    top:0;
+    right:0;
+    width:100px;
+    height:100px;
+}
+.icon{
+
+}
+
         /* Footer */
 
 
+        
+.hyperlink-icon{    
+    color:#434242; 
+    background-color:silver; 
+    border-radius:7px;
+    margin-right:15px; 
+    padding:2%;
+    display:inline;}
+a.contact-hyperlink{
+    color:silver;
+}
+a.contact-hyperlink:hover {
+    color:#fff;
+}
+a.contact-hyperlink:hover .hyperlink-icon{
+    background-color:#fff;
+}
+.container-footer{
+    padding:5% 15%;
+}
+.fb-color{
+    background-color:#44619D;
+    border-color:#44619D;
+}
+.download-button{
+    margin:5% 2% 5% 0;
+  }
 
 
 
-
-                    /* Titlu and parallax background */
+/* Titlu and parallax background */
 
 
                         /* Content */
@@ -284,9 +367,8 @@ footer{
     margin-top:5%;
 }
 .title-image{
-    display: block;
-  width: auto;
-  height: auto;
+  display: block;
+  max-height:300px;
   border-radius:50px;
   border: 10px solid #F3EFE0;
 
@@ -355,93 +437,7 @@ footer{
 
 }
 
-/* Proiecte - Galerie*/
-.container-fluid-image{
-    position: relative;
-    overflow:hidden;
-    margin:10px;
-}
-figcaption{
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background: rgba(155, 24, 167, 0.644);
-    visibility: hidden;
-    opacity: 0;
-    
-    
-    
-}
-.container-fluid-image:hover figcaption{
-    transition:0.5s;
-    visibility: visible;
-    opacity: 1;
-    overflow:hidden;
-}
-.container-fluid-image:hover .icon{
-}
 
-.container-figure{
-    padding:8% 10%;
-    
-}
-.fig-title{
-    padding:5% 5% 0% 0;
-}
-.fig-body{
-    padding: 6% 5% 5% 0;
-}
-.fig-footer{
-    padding: 5% 5% 5% 0;
-}
-.container-figure hr{
-    border:2px solid whitesmoke;
-    width:100%;
-
-}
-.container-figure h3,.container-figure p {
-    font-family: 'Montserrat';
-    text-align:left;
-    color:#fff;
-}
-.icon-container{
-    position:absolute;
-    top:0;
-    right:0;
-    width:100px;
-    height:100px;
-}
-.icon{
-
-}
-.hyperlink-icon{    
-    color:#434242; 
-    background-color:silver; 
-    border-radius:7px;
-    margin-right:15px; 
-    padding:2%;
-    display:inline;}
-a.contact-hyperlink{
-    color:silver;
-}
-a.contact-hyperlink:hover {
-    color:#fff;
-}
-a.contact-hyperlink:hover .hyperlink-icon{
-    background-color:#fff;
-}
-.container-footer{
-    padding:5% 15%;
-}
-.fb-color{
-    background-color:#44619D;
-    border-color:#44619D;
-}
-.download-button{
-    margin:5% 2% 5% 0;
-  }
 /*************************** ID Selectors ****************/
 #titlu{
     text-align:center;
@@ -477,44 +473,89 @@ a.contact-hyperlink:hover .hyperlink-icon{
     letter-spacing: 1px;
     color:#fff;
 }
-
+        /*Footer*/
 
 /* Media Breakpoints - Mobile responsive */
 
 /* Extra small devices - Portrait phones (<544px) */
 @media screen and (max-width:544px){
+    .icon-header-container{
+        display: none;
+    }
     .page-bar{
         display: none;
     }
-    h1{
-        font-size:2rem;
+    .title-paragraph{
+        font-size:1.2rem;
     }
-    .title-h1{
-        width:500px;
-       margin-left:0;
-      }
+
+    h1{
+        font-size:1.5rem;
+    }
     .container-fluid-top{
         padding:45% 15%;
-        height:100vh;
     }
     #despre-mine{
         margin-top:0;
+    }
+    .container-sub-title-abilitati{
+        display:none;
+    }
+    .card-deck{
+        display:none;
+    }
+    .container-despre-mine{
+        padding:5% 2%;
+    }
+    .content-one{
+        text-align:center;
+        padding-bottom:2%;
+    }
+    .image-div{
+        margin-left:15%;
+        padding-bottom:2%;
+    }
+    .content-two{
+        text-align:center;
+        padding-bottom:2%;
+    }
+    #abilitati{
+        display:none;
+    }
+
+    /*Footer*/
+    .container-footer{
+        padding:2% 5%;
+    }
+    .hyperlink-icon{
+        margin:5px;
+        padding:1%;
+    }
+    a.contact-hyperlink{
+        font-size:0.6rem;
+    }
+    .second-icon{
+        padding:5%;
     }
 }
 
 /*Small devices - Landscape phones (≥544px - <768px)*/
 @media (min-width:544px) and (max-width:768px){
 
+    .icon-header-container{
+        display: none;
+    }
+
+    .title-paragraph{
+        font-size:1.2rem;
+    }
+
     h1{
-        font-size:2.5rem;
+        font-size:1.5rem;
     }
     .page-bar{
         display: none;
     }
-    .title-h1{
-        width:500px;
-       margin-left:0;
-      }
     .container-fluid-top{
         padding:50% 15%;
         height:100vh;
@@ -522,51 +563,74 @@ a.contact-hyperlink:hover .hyperlink-icon{
     #despre-mine{
         margin-top:0;
     }
+    .container-sub-title-abilitati{
+        display:none;
+    }
+    .card-deck{
+        display:none;
+    }
+    .container-despre-mine{
+        padding:5% 0%;
+    }
+    .content-one{
+        text-align:center;
+        padding-bottom:2%;
+    }
+    .image-div{
+        margin-left:25%;
+        padding-bottom:2%;
+    }
+    .content-two{
+        text-align:center;
+        padding-bottom:2%;
+    }
+        /*Footer*/
 
 }
 /*Medium devices -Tablets (≥768px - <992px) */
 @media(min-width:768px) and (max-width:992px){
-
+    .icon-header-container{
+        display: none;
+    }
+    .page-bar{
+        display:none;
+    }
     .container-fluid-top{
         padding:40% 15%;
         height:100vh;
+    }
+    .container-despre-mine{
+        padding:5% 0%;
     }
 
     #content{
         top:-4rem;
     }
-    .page-bar{
-        display: none;
-    }
-    .title-h1{
-        width:500px;
-       margin-left:0;
-      }
     #despre-mine{
         margin-top:0;
+    }
+    .card-deck{
+        display:none;
     }
 }
 /*Large devices - Desktops (≥992px - <1200px)*/
 @media(min-width:992px) and (max-width:1200px){
-
+    .page-bar{
+        display:none;
+    }
+    .icon-header-container{
+        display: none;
+    }
     .container-fluid-top{
         padding:20% 15%;
         height:100vh;
     }
     #content{
         top:-2rem;
-        width:500px;
     }
-    .page-bar{
-        display:none;
-    }
-    .title-h1{
-        width:500px;
-       margin-left:0;
-      }
-
-        #despre-mine{
+    #despre-mine{
             margin-top:0;
+            
         }
 
 }
@@ -577,39 +641,7 @@ a.contact-hyperlink:hover .hyperlink-icon{
         padding:20% 15%;
         height:100vh;
     }
-    .title-h1{
-        width:500px;
-       margin-left:0;
-      }
     #despre-mine{
         margin-top:0;
     }
 }
-
-
-
-/* @media (max-width:468px ){
-
-    .container-fluid-top{
-        padding:30% 15%;
-    }
-    
-}
-
-@media  (max-width:768px) {
-    h1{
-        font-size: 3rem;
-    }
-    .container-fluid-top{
-        padding:10% 7%;
-    }
-}
-@media  (max-width:992px) {
-    .container-fluid-top{
-        padding: 10% 15%;
-    }
-}
-@media  (max-width:1200px) {
-   
-} */
-
