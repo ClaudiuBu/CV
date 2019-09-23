@@ -131,7 +131,7 @@ footer{
                 left:0px;
                 width:150px;
                 height:150px;
-                background-color:#000;
+                background:repeating-linear-gradient(45deg,#C2C2C2,transparent);
                 text-align:center;
                 border-top-left-radius: 10px;
                 border-top-right-radius:10px;
@@ -162,7 +162,9 @@ footer{
         .page-bar{
             margin-top:0px;
             padding:20px 0px 0px 0px;
-            background-color:#000;
+            /* background:repeating-linear-gradient(45deg,black,transparent),repeating-linear-gradient(60deg,purple,transparent)
+            ,repeating-linear-gradient(80deg,black,transparent); */
+            background:repeating-linear-gradient(45deg,black,transparent);
             right:90%;
             width:150px;
             border-bottom-left-radius: 10px;
@@ -185,8 +187,8 @@ footer{
             text-decoration: none;
             color:#fff;
         }
-        .page-bar a:hover{
-            color:rgb(104, 19, 105);
+        .page-bar a:hover, .page-bar li:hover {
+            color:rgba(200, 86, 204, 0.486);
             transition: 0.5s;   
         } 
         /*Despre mine */
@@ -279,6 +281,9 @@ figcaption{
     width:100%;
 
 }
+.shadow-gallery{
+    box-shadow: 0.3rem 0.5rem 1rem rgba(105, 13, 70, 0.185) !important;
+  }
 .container-figure h3,.container-figure p {
     font-family: 'Montserrat';
     text-align:left;
@@ -294,11 +299,7 @@ figcaption{
 .icon{
 
 }
-
-        /* Footer */
-
-
-        
+        /* Footer */    
 .hyperlink-icon{    
     color:#434242; 
     background-color:silver; 
@@ -325,6 +326,15 @@ a.contact-hyperlink:hover .hyperlink-icon{
 .download-button{
     margin:5% 2% 5% 0;
   }
+.button-projects{
+    padding:5%;
+}
+.btn-outline-dark:hover{
+    background-color:#b030b0;
+    color:#fff;
+    border-color:#b030b0;
+    transition: 0.5s;
+}
 
 
 
