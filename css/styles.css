@@ -189,6 +189,11 @@ footer{
             color:rgb(104, 19, 105);
             transition: 0.5s;   
         } 
+        .active{
+            background-color:white;
+            color:black;
+            transition:0.5s;
+        }
         /*Despre mine */
             /* Container */
             .container-despre-mine{
