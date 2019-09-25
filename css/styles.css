@@ -487,6 +487,15 @@ a.contact-hyperlink:hover .hyperlink-icon{
     letter-spacing: 1px;
     color:#fff;
 }
+
+/* Asezare pagina */
+.left{
+    text-align:left;
+
+}
+.right{
+    text-align:right;
+}
         /*Footer*/
 
 /* Media Breakpoints - Mobile responsive */
@@ -529,7 +538,7 @@ a.contact-hyperlink:hover .hyperlink-icon{
         padding-bottom:2%;
     }
     .image-div{
-        margin-left:15%;
+        margin-left:10%;
         padding-bottom:2%;
     }
     .content-two{
@@ -538,6 +547,16 @@ a.contact-hyperlink:hover .hyperlink-icon{
     }
     #abilitati{
         display:none;
+    }
+    /*Gallery*/
+    .fig-title{
+        padding:0;
+    }
+    .fig-body{
+        padding:0;
+    }
+    .fig-footer{
+        padding:0;
     }
 
     /*Footer*/
@@ -549,10 +568,14 @@ a.contact-hyperlink:hover .hyperlink-icon{
         padding:1%;
     }
     a.contact-hyperlink{
-        font-size:0.6rem;
+        font-size:0.75rem;
+        text-align:left;
     }
     .second-icon{
         padding:5%;
+    }
+    .right{
+        text-align:left;
     }
 }
 
@@ -604,6 +627,7 @@ a.contact-hyperlink:hover .hyperlink-icon{
         text-align:center;
         padding-bottom:2%;
     }
+
         /*Footer*/
 
 }

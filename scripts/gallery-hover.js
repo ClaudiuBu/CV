@@ -14,5 +14,5 @@ $(".container-fluid-image").hover(
     }
   )
 function  gotoGit(){
-  location.href='https://github.com/ClaudiuBu';
+  location.href='https://github.com/ClaudiuBu?tab=repositories';
 }
