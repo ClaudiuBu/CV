@@ -1,0 +1,22 @@
+{
+  "name": "cv",
+  "version": "1.0.0",
+  "description": "CV",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ClaudiuBu/CV.git"
+  },
+  "author": "Cristian Claudiu Butnaru",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ClaudiuBu/CV/issues"
+  },
+  "homepage": "https://github.com/ClaudiuBu/CV#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
