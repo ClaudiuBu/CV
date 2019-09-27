@@ -264,6 +264,10 @@ figcaption{
     opacity: 1;
     overflow:hidden;
 }
+.container-fluid-image:hover img{
+   
+
+}
 .container-fluid-image:hover .icon{
 }
 
@@ -293,16 +297,32 @@ figcaption{
     text-align:left;
     color:#fff;
 }
-.icon-container{
+.icon-gallery-container{
     position:absolute;
     top:0;
     right:0;
     width:100px;
     height:100px;
 }
-.icon{
 
+a.fas.fa-chevron-circle-right{             
+    animation: move 2s infinite;
+    color:#fff;
+    height:60px;
+    
+    
 }
+a.fas.fa-chevron-circle-right:hover{
+    transform:rotate(360deg);
+    transition:1s;
+}
+@keyframes move{
+    0%{margin-left:0px}
+    50%{margin-left:50px;}
+    100%{margin-left:0px}
+    }
+
+
         /* Footer */    
 .hyperlink-icon{    
     color:#434242; 
@@ -321,7 +341,7 @@ a.contact-hyperlink:hover .hyperlink-icon{
     background-color:#fff;
 }
 .container-footer{
-    padding:5% 15%;
+    padding:1% 15%;
 }
 .fb-color{
     background-color:#44619D;
