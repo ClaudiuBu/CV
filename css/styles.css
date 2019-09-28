@@ -262,9 +262,6 @@ figcaption{
     background: rgba(155, 24, 167, 0.644);
     visibility: hidden;
     opacity: 0;
-    
-    
-    
 }
 .container-fluid-image:hover figcaption{
     transition:0.5s;
