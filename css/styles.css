@@ -19,7 +19,7 @@ p{
     color:black;
 }
 a{
-    color:#b19cd9;
+    color:#fff;
     font-family:'Roboto';
 }
 a:hover{
@@ -53,6 +53,9 @@ h6{
 footer{
     text-align: center;
 }
+ul{
+    padding-left:0;
+}
 
 
 /****************** Class Selectors ****************/
@@ -60,8 +63,12 @@ footer{
         /* Site sections */
         /* Header */
             /* Navigation */
+
             .navigation{
                visibility: hidden;
+            }
+            .shadow-navbar{
+                box-shadow: 0.3rem 0.5rem 1rem rgba(105, 13, 70, 0.185) !important;
             }
             .nav-item:hover{
                 transition: 0.5s;
@@ -165,7 +172,6 @@ footer{
         /* Side bar */
         .page-bar{
             margin-top:0px;
-            padding:20px 0px 0px 0px;
             /* background:repeating-linear-gradient(45deg,black,transparent),repeating-linear-gradient(60deg,purple,transparent)
             ,repeating-linear-gradient(80deg,black,transparent); */
             background:repeating-linear-gradient(45deg,black,transparent);
@@ -179,22 +185,24 @@ footer{
         .page-bar ul{
             text-align:center;
             list-style-type:none;
-            padding-left:10px;
             margin-bottom:0px;
+            
         
         }
         .page-bar li{
-            padding:10px 20px 10px 10px;
+            padding:20px;
             color:#fff;
+
         }
         .page-bar a{
             text-decoration: none;
-            color:#fff;
         }
-        .page-bar a:hover, .page-bar li:hover {
-            color:rgba(200, 86, 204, 0.486);
-            transition: 0.5s;   
-        } 
+
+        .active, #side-bar a:hover{
+            transition:1s;
+            transform: scale(1.1,1.2) rotate(360deg);
+            color:#000 !important;
+        }
         /*Despre mine */
             /* Container */
             .container-despre-mine{
@@ -264,13 +272,6 @@ figcaption{
     opacity: 1;
     overflow:hidden;
 }
-.container-fluid-image:hover img{
-   
-
-}
-.container-fluid-image:hover .icon{
-}
-
 .container-figure{
     padding:8% 10%;
     
@@ -377,6 +378,9 @@ a.contact-hyperlink:hover .hyperlink-icon{
     display:inline-block;
     padding:5% 2%;
 } 
+.container-page a{
+    color:#b19cd9;
+}
 .container-skill{
     padding:5% 2% 0% 5%;
     width:900px;
@@ -544,6 +548,12 @@ a.contact-hyperlink:hover .hyperlink-icon{
     #despre-mine{
         margin-top:0;
     }
+    .container-despre-mine-content{
+        padding:0;
+    }
+    .title-image{
+        margin:0 auto;
+    }
     .container-sub-title-abilitati{
         display:none;
     }
@@ -557,10 +567,10 @@ a.contact-hyperlink:hover .hyperlink-icon{
         text-align:center;
         padding-bottom:2%;
     }
-    .image-div{
+    /* .image-div{
         margin-left:10%;
         padding-bottom:2%;
-    }
+    } */
     .content-two{
         text-align:center;
         padding-bottom:2%;
