@@ -203,6 +203,12 @@ ul{
             transform: scale(1.1,1.2) rotate(360deg);
             color:#000 !important;
         }
+        .li-active{
+            transition:1s;
+            background:repeating-linear-gradient(45deg,#b030b0,transparent);
+            color:#000 !important;
+
+        }
         /*Despre mine */
             /* Container */
             .container-despre-mine{
